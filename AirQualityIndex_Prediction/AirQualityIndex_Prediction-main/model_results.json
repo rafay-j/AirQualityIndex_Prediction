@@ -1,0 +1,88 @@
+{
+  "timestamp": "2025-11-14T15:55:18.431948",
+  "model_comparison": [
+    {
+      "rank": 1,
+      "model_name": "XGBoost",
+      "rmse": 9.362153062187359,
+      "mae": 5.567357904957272,
+      "r2_score": 0.9495540259310189,
+      "performance": "Excellent",
+      "cv_r2_mean": 0.933561727955993,
+      "cv_r2_std": 0.02553037725938175,
+      "cv_rmse_mean": 7.328286140852006,
+      "cv_rmse_std": 3.0902818147855395
+    },
+    {
+      "rank": 2,
+      "model_name": "RandomForest",
+      "rmse": 9.514420663111242,
+      "mae": 5.68893157994674,
+      "r2_score": 0.9478997585292707,
+      "performance": "Excellent",
+      "cv_r2_mean": 0.9386480932037496,
+      "cv_r2_std": 0.01768572471620443,
+      "cv_rmse_mean": 7.066063735960874,
+      "cv_rmse_std": 2.733427745049069
+    },
+    {
+      "rank": 3,
+      "model_name": "LSTM",
+      "rmse": 16.190464147994167,
+      "mae": 10.70841034231127,
+      "r2_score": 0.8493167864150232,
+      "performance": "Good"
+    },
+    {
+      "rank": 4,
+      "model_name": "CNN_1D",
+      "rmse": 39.87548638694254,
+      "mae": 30.928573565025264,
+      "r2_score": 0.08597460522568956,
+      "performance": "Worst"
+    }
+  ],
+  "best_model": "XGBoost",
+  "predictions_next_3_days": {
+    "RandomForest": [
+      {
+        "day": 1,
+        "date": "2025-11-15",
+        "aqi": 181.9572321121161,
+        "category": "Unhealthy"
+      },
+      {
+        "day": 2,
+        "date": "2025-11-16",
+        "aqi": 192.41133291773028,
+        "category": "Unhealthy"
+      },
+      {
+        "day": 3,
+        "date": "2025-11-17",
+        "aqi": 201.12517361476432,
+        "category": "Very Unhealthy"
+      }
+    ],
+    "XGBoost": [
+      {
+        "day": 1,
+        "date": "2025-11-15",
+        "aqi": 180.97016233139587,
+        "category": "Unhealthy"
+      },
+      {
+        "day": 2,
+        "date": "2025-11-16",
+        "aqi": 183.8472628124739,
+        "category": "Unhealthy"
+      },
+      {
+        "day": 3,
+        "date": "2025-11-17",
+        "aqi": 200.3830667208483,
+        "category": "Very Unhealthy"
+      }
+    ]
+  }
+}
